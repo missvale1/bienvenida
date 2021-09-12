@@ -1,7 +1,30 @@
 body {
-  margin: auto;
-  max-width: 1280px;
+  margin: 0px;
 }
+
+/* Globales */
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  color: rgb(61, 0, 41);
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 1000;
+}
+
+main {
+  margin: 1rem;
+}
+
+/* Encabezado MISS VALE */
 
 header {
   display: flex;
@@ -15,30 +38,44 @@ header {
 }
 
 header > h1 {
-  font-family: 'Raleway', sans-serif;
   margin: 0.25rem;
-  font-weight: 700;
-  font-size: 3rem;
 }
 
 header > span {
   font-family: cursive;
 }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-  color: rgb(61, 0, 41);
-}
+/* Sección de Visión/Misión/Valores */
 
-#enterprise-values {
-  display: flex;
-}
-
-.info {
-  width: 50%;
-  padding: 1rem;
-}
-
-p {
+.contenedor-compromiso {
   font-family: 'Open-Sans', sans-serif;
+}
+
+#compromisos-empresariales {
+  display: flex;
+  gap: 5rem;
+}
+
+footer {
+  margin-top: 4rem;
+  background-color: #ba2d65;
+  color: white;
+  padding: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+/* Responsibilidad */
+
+@media only screen and (max-width: 600px) {
+  #compromisos-empresariales {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  main {
+    max-width: 1200px;
+    margin: auto;
+  }
 }
