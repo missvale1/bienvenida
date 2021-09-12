@@ -1,8 +1,8 @@
+
+/* Globales */
 body {
   margin: 0px;
 }
-
-/* Globales */
 
 h1{
   font-family: 'Raleway', sans-serif;
@@ -22,6 +22,15 @@ h3 {
 
 main {
   margin: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+main > section {
+  margin-bottom: 3rem;
 }
 
 /* Encabezado MISS VALE */
@@ -53,16 +62,56 @@ header > span {
 
 #compromisos-empresariales {
   display: flex;
-  gap: 5rem;
+  gap: 0rem 5rem;
 }
 
 footer {
-  margin-top: 4rem;
   background-color: #ba2d65;
   color: white;
   padding: 2rem;
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
+}
+
+/* Catálogo */
+
+
+
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-auto-rows: 15rem;
+  gap: 2rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+.item {
+  background-color: #fff9fc;
+  display: block;
+  flex-direction: column;
+  padding: 1rem;
+  border-radius: 0px;
+  box-shadow: 5px 0px 25px #fde4ef;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.item > img {
+  height: 75%;
+  width: 100%;
+  flex: 1;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item > .titulo {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.item > .precio {
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Responsibilidad */
