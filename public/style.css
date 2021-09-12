@@ -6,7 +6,7 @@ body {
 #header {
   display: flex;
   height: 10rem;
-  background-image: url('./assets/images/background.jpg');
+  background-image: url('.assets/image/background.jpg');
   background-size: cover;
 }
 
