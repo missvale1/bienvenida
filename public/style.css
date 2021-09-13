@@ -56,13 +56,18 @@ header > span {
 
 /* Sección de Visión/Misión/Valores */
 
-.contenedor-compromiso {
+.contenido-compromiso {
   font-family: 'Open-Sans', sans-serif;
 }
 
-#compromisos-empresariales {
+.contenedor-compromiso {
   display: flex;
+  align-items: center;
   gap: 0rem 5rem;
+}
+
+.contenedor-compromiso > img {
+  width: 250px;
 }
 
 footer {
@@ -78,7 +83,7 @@ footer {
 .galeria {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
-  grid-auto-rows: 15rem;
+  grid-auto-rows: 18rem;
   gap: 2rem;
   font-family: 'Roboto', sans-serif;
 }
@@ -112,10 +117,16 @@ footer {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* Pedidos */
+
+#pedidos {
+  font-family: 'Roboto', sans-serif;
+}
+
 /* Responsibilidad */
 
 @media only screen and (max-width: 600px) {
-  #compromisos-empresariales {
+  #contenedor-compromiso {
     flex-direction: column;
   }
 }
